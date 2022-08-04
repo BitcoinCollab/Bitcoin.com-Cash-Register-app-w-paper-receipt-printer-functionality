@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PinActivity">
+
+        <ImageButton
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:onClick="clear"
+            android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/button10"
+            app:layout_constraintEnd_toEndOf="@+id/button9"
+            app:layout_constraintStart_toStartOf="@+id/button9"
+            app:layout_constraintTop_toTopOf="@+id/button10"
+            app:srcCompat="@drawable/ic_cancel" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_next5"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="50dp"
+            android:onClick="next"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/pinbutton_size"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_clear"
+            app:layout_constraintStart_toStartOf="@+id/button7"
+            app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+        <com.mukesh.OtpView
+            android:id="@+id/otp_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:itemBackground="@drawable/ic_rectangle"
+            android:textColor="@color/purple_500"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:OtpItemCount="4"
+            app:OtpItemHeight="@dimen/pinbox_size"
+            app:OtpItemRadius="8dp"
+            app:OtpItemSpacing="18dp"
+            app:OtpItemWidth="@dimen/pinbox_size"
+            app:OtpViewType="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <TextView
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/ic_rectangle"
+            android:clickable="true"
+            android:foreground="@drawable/ripple_gray"
+            android:gravity="center"
+            android:onClick="enterOTP"
+            android:text="1"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/pinbutton_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="@+id/otp_view"
+            app:layout_constraintTop_toBottomOf="@+id/otp_view" />
+
+        <TextView
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/ic_rectangle"
+            android:clickable="true"
+            android:foreground="@drawable/ripple_gray"
+            android:gravity="center"
+            android:onClick="enterOTP"
+            android:text="4"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/pinbutton_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
+
+        <TextView
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/ic_rectangle"
+            android:clickable="true"
+            android:foreground="@drawable/ripple_gray"
+            android:gravity="center"
+            android:onClick="enterOTP"
+            android:text="7"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/pinbutton_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/button4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/button4"
+            app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+        <TextView
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_rectangle"
+            android:clickable="true"
+            android:foreground="@drawable/ripple_gray"
+            android:gravity="center"
+            android:onClick="enterOTP"
+            android:text="8"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/pinbutton_size"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/button7"
+            app:layout_constraintEnd_toEndOf="@+id/button5"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/button5" />
+
+        <TextView
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_rectangle"
+            android:clickable="true"
+            android:foreground="@drawable/ripple_gray"
+            android:gravity="center"
+            android:onClick="enterOTP"
+            android:text="9"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/pinbutton_size"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/button8"
+            app:layout_constraintEnd_toEndOf="@+id/button6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/button6" />
+
+        <TextView
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/ic_rectangle"
+            android:clickable="true"
+            android:foreground="@drawable/ripple_gray"
+            android:gravity="center"
+            android:onClick="enterOTP"
+            android:text="0"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/pinbutton_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/button8"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/button8"
+            app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+        <TextView
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_rectangle"
+            android:clickable="true"
+            android:foreground="@drawable/ripple_gray"
+            android:gravity="center"
+            android:onClick="enterOTP"
+            android:text="5"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/pinbutton_size"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/button4"
+            app:layout_constraintEnd_toEndOf="@+id/button2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/button2" />
+
+        <TextView
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_rectangle"
+            android:clickable="true"
+            android:foreground="@drawable/ripple_gray"
+            android:gravity="center"
+            android:onClick="enterOTP"
+            android:text="6"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/pinbutton_size"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/button4"
+            app:layout_constraintEnd_toEndOf="@+id/button3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/button3" />
+
+        <TextView
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_rectangle"
+            android:clickable="true"
+            android:foreground="@drawable/ripple_gray"
+            android:gravity="center"
+            android:onClick="enterOTP"
+            android:text="2"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/pinbutton_size"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/button"
+            app:layout_constraintEnd_toStartOf="@+id/button3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button" />
+
+        <TextView
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_rectangle"
+            android:clickable="true"
+            android:foreground="@drawable/ripple_gray"
+            android:gravity="center"
+            android:onClick="enterOTP"
+            android:text="3"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/pinbutton_size"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="@+id/otp_view"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="pinentry_num_text_size">50sp</dimen>
+
+    <dimen name="transaction_amount_fiat_size">22sp</dimen>
+    <dimen name="transaction_amount_coin_size">9sp</dimen>
+    <dimen name="transaction_date_size">16sp</dimen>
+
+    <dimen name="qr_code_size">280dp</dimen>
+    <integer name="qr_code_width">280</integer>
+    <integer name="number_of_rows">2</integer>
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="pinbox_size">50dp</dimen>
+    <dimen name="pinbutton_size">20sp</dimen>
+</resources>

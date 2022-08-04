@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#0ac18e</color>
+    <color name="purple_500">#0ac18e</color>
+    <color name="purple_700">#4d4d4d </color>
+    <color name="teal_200">#0ac18e</color>
+    <color name="teal_700">#0ac18e</color>
+    <color name="black">#4d4d4d</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="bitcoindotcom_green">#00c58a</color>
+    <color name="gray">#A0A0A0</color>
+    <color name="gray_text">#919191</color>
+    <color name="ripple_gray">#e0e0e0</color>
+</resources>

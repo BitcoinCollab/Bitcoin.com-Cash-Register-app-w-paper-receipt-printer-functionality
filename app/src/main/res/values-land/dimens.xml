@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">48dp</dimen>
+    <dimen name="pinbox_size">60dp</dimen>
+    <dimen name="pinbutton_size">23sp</dimen>
+    <integer name="number_of_rows">3</integer>
+
+</resources>
