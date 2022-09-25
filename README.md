@@ -27,7 +27,6 @@ gh repo clone BitcoinCollab/Bitcoin.com-Cash-Register-app-w-paper-receipt-printe
     
 ## Screenshots
 
-<img src="https://www.linkpicture.com/q/Screenshot_20220725_144757.jpg" width="20%" height="auto">
 <img src="https://www.linkpicture.com/q/Screenshot_20220626_181221.jpg" width="20%" height="auto">
 <img src="https://www.linkpicture.com/q/Screenshot_20220626_181226.jpg" width="20%" height="auto">
 
